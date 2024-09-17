@@ -14,7 +14,6 @@ services:
     image: php:8.0-fpm
     build: ./php
     volumes:
-      # - ./php/www.conf:/usr/local/etc/php-fpm.d/www.conf
       - ./www/html:/var/www/html
     depends_on:
       - db
